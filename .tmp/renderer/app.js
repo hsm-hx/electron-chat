@@ -48,5 +48,16 @@ if (!location.hash.length) {
   location.hash = "#/login";
 }
 
+// firebaseの初期化
+var config = {
+  apiKey: "AIzaSyDpKd-kMXWM3UfQ_BtUyieqUyPISi8247Y",
+  authDomain: "electron-chat-2d0b6.firebaseapp.com",
+  databaseURL: "https://electron-chat-2d0b6.firebaseio.com",
+  projectId: "electron-chat-2d0b6",
+  storageBucket: "electron-chat-2d0b6.appspot.com",
+  messagingSenderId: "557195514278"
+};
+firebase.initializeApp(config);
+
 // Applicationの描画
 (0, _reactDom.render)(appRouting, document.getElementById("app"));
